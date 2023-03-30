@@ -22,6 +22,8 @@ export const ContactForm = ({ handleSubmit }) => {
     const form = e.currentTarget;
     handleSubmit({ name: name, number: number });
     form.reset();
+    setName('');
+    setNumber('');
   };
  
   return (
